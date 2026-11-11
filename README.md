@@ -2,7 +2,9 @@
 
 Основной репозиторий: https://github.com/Bakster01/english_50
 
-Рабочий тренажёр: https://english-fifty-phrases-gena.bakster01.chatgpt.site (вход через аккаунт владельца в ChatGPT). Изменения в GitHub сами по себе не публикуют новую версию Sites.
+Адрес GitHub Pages: https://bakster01.github.io/english_50/
+
+Версия Sites: https://english-fifty-phrases-gena.bakster01.chatgpt.site (вход через аккаунт владельца в ChatGPT). Изменения в GitHub сами по себе не публикуют новую версию Sites.
 
 Мобильный тренажёр по ролику LinguaTrip TV: прослушивание и повторение, перевод на слух, выбор реплики по ситуации, самостоятельное вспоминание.
 
@@ -15,6 +17,12 @@
 `node --test --test-isolation=none tests/app.test.mjs tests/core.test.mjs`
 
 Нет зависимостей и сборки. Файлы для публикации находятся в `dist/`.
+
+## Публикация через GitHub Pages
+
+В Settings → Pages выберите Source → GitHub Actions. Workflow `.github/workflows/pages.yml` запускается после отправки в `main` и вручную из Actions. Сначала выполняются тесты на Node.js 24, затем содержимое `dist/` публикуется на Pages. Если тесты не проходят, публикация не запускается.
+
+Версия Pages общедоступна и не требует входа в ChatGPT. Прогресс в Pages и Sites хранится отдельно, поскольку это разные адреса сайтов.
 
 ## Ограничения
 
