@@ -1,0 +1,14 @@
+{
+  "name": "english-50",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Мобильный тренажёр 50 английских фраз",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test --test-isolation=none tests/app.test.mjs tests/core.test.mjs"
+  }
+}
